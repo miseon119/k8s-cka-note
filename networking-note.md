@@ -47,3 +47,8 @@ ipcalc -b 10.2.37.12/24
 ```bash
 kubectl logs <weave-pod-name> weave -n kube-system
 ```
+
+### What is the IP Range configured for the services within the cluster?
+```bash
+cat /etc/kubernetes/manifests/kube-apiserver.yaml | grep cluster-ip-range
+```
