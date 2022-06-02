@@ -52,3 +52,8 @@ kubectl logs <weave-pod-name> weave -n kube-system
 ```bash
 cat /etc/kubernetes/manifests/kube-apiserver.yaml | grep cluster-ip-range
 ```
+
+### What type of proxy is the kube-proxy configured to use?
+```bash
+kubectl logs <kube-proxy-pod-name> -n kube-system
+```
