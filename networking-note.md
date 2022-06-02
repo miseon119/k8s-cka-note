@@ -34,3 +34,12 @@ What is the POD IP address range configured by weave?
 ```bash
  ip addr show weave
 ```
+
+What network range are the nodes in the cluster part of?
+```bash
+apt update
+apt install ipcalc
+ip a | grep eth0 
+ipcalc -b 10.2.37.12/24
+```
+
