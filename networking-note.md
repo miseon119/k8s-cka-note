@@ -43,3 +43,7 @@ ip a | grep eth0
 ipcalc -b 10.2.37.12/24
 ```
 
+### What is the range of IP addresses configured for PODs on this cluster?
+```bash
+kubectl logs <weave-pod-name> weave -n kube-system
+```
